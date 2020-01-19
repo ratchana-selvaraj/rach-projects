@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+  <style>
+  p
+{
+color:green;
+font-size:20px;
+}
+.button {
+  background-color: pink;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
     <title>Vegefoods - Free Bootstrap 4 Template by Colorlib</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -108,103 +127,37 @@
 			<form  method="post" action="/result","result.html">
 			<center><input type = "text" placeholder="search" name="product_name"><input type="submit" value="search"></center>
     		</form>
-			<div class="row">
-    			<div class="col-md-6 col-lg-3 ftco-animate">
-    				<div class="product">
-    					<a href="#" class="img-prod"><img class="img-fluid" src="images/product-1.jpg" alt="Colorlib Template">
-    						<div class="overlay"></div>
-    					</a>
-    					<div class="text py-3 pb-4 px-3 text-center">
-    						<h3><a href="#">Bell Pepper</a></h3>
-    						<div class="d-flex">
-	    					</div>
-	    					<div class="bottom-area d-flex px-3">
-    						</div>
-    					</div>
-    				</div>
-    			</div>
-    			<div class="col-md-6 col-lg-3 ftco-animate">
-    				<div class="product">
-    					<a href="#" class="img-prod"><img class="img-fluid" src="images/product-2.jpg" alt="Colorlib Template">
-    						<div class="overlay"></div>
-    					</a>
-    					<div class="text py-3 pb-4 px-3 text-center">
-    						<h3><a href="#">Strawberry</a></h3>
-    						<div class="d-flex">
-	    					</div>
-    						<div class="bottom-area d-flex px-3">
-    						</div>
-    					</div>
-    				</div>
-    			</div>
-    			<div class="col-md-6 col-lg-3 ftco-animate">
-    				<div class="product">
-    					<a href="#" class="img-prod"><img class="img-fluid" src="images/product-3.jpg" alt="Colorlib Template">
-	    					<div class="overlay"></div>
-	    				</a>
-    					<div class="text py-3 pb-4 px-3 text-center">
-    						<h3><a href="#">Green Beans</a></h3>
-    						<div class="d-flex">
-	    					</div>
-    						<div class="bottom-area d-flex px-3">
-    						</div>
-    					</div>
-    				</div>
-    			</div>
-    			<div class="col-md-6 col-lg-3 ftco-animate">
-    				<div class="product">
-    					<a href="#" class="img-prod"><img class="img-fluid" src="images/product-4.jpg" alt="Colorlib Template">
-    						<div class="overlay"></div>
-    					</a>
-    					<div class="text py-3 pb-4 px-3 text-center">
-    						<h3><a href="#">Purple Cabbage</a></h3>
-    						<div class="d-flex">
-	    					</div>
-    						<div class="bottom-area d-flex px-3">
-    						</div>
-    					</div>
-    				</div>
-    			</div>
-    			<div class="col-md-6 col-lg-3 ftco-animate">
-    				<div class="product">
-    					<a href="#" class="img-prod"><img class="img-fluid" src="images/product-5.jpg" alt="Colorlib Template">
-    						<div class="overlay"></div>
-    					</a>
-    					<div class="text py-3 pb-4 px-3 text-center">
-    						<h3><a href="#">Tomatoe</a></h3>
-    						<div class="d-flex">
-	    					</div>
-    					</div>
-    				</div>
-    			</div>
-    			<div class="col-md-6 col-lg-3 ftco-animate">
-    				<div class="product">
-    					<a href="#" class="img-prod"><img class="img-fluid" src="images/product-6.jpg" alt="Colorlib Template">
-    						<div class="overlay"></div>
-    					</a>
-    					<div class="text py-3 pb-4 px-3 text-center">
-    						<h3><a href="#">Brocolli</a></h3>
-    						<div class="d-flex">
-	    					</div>
-    						<div class="bottom-area d-flex px-3">
-    						</div>
-    					</div>
-    				</div>
-    			</div>
-    			<div class="col-md-6 col-lg-3 ftco-animate">
-    				<div class="product">
-    					<a href="#" class="img-prod"><img class="img-fluid" src="images/product-7.jpg" alt="Colorlib Template">
-	    					<div class="overlay"></div>
-	    				</a>
-    					<div class="text py-3 pb-4 px-3 text-center">
-    						<h3><a href="#">Carrots</a></h3>
-	    					</div>
-    						<div class="bottom-area d-flex px-3">
-    						</div>
-    					</div>
-    				</div>
-    			</div>
-				
+			<p>Product :{{m[1]}}  price per kg :{{n[1]}}        <label>Quantity</label><input type="text" name="Quantity1"></p>
+			<li class="nav-item"><a href="#" class="button">Add to cart</a></li>
+		
+			<br>
+			<p>Product :{{m[2]}}  price per kg :{{n[2]}}        <label>Quantity</label><input type="text" name="Quantity2"></p>
+			<li class="nav-item"><a href="#" class="button">Add to cart</a></li>
+		
+			<br>
+			<p>Product :{{m[3]}}  price per kg :{{n[3]}}        <label>Quantity</label><input type="text" name="Quantity3"></p>
+			<li class="nav-item"><a href="#" class="button">Add to cart</a></li>
+		
+			<br>
+			<p>Product :{{m[4]}}  price per kg :{{n[4]}}        <label>Quantity</label><input type="text" name="Quantity4"></p>
+			<li class="nav-item"><a href="#" class="button">Add to cart</a></li>
+		
+			<br>
+			<p>Product :{{m[5]}}  price per kg :{{n[5]}}        <label>Quantity</label><input type="text" name="Quantity5"></p>
+			<li class="nav-item"><a href="#" class="button">Add to cart</a></li>
+		
+			<br>
+			<p>Product :{{m[6]}}  price per kg :{{n[6]}}        <label>Quantity</label><input type="text" name="Quantity6"></p>
+			<li class="nav-item"><a href="#" class="button">Add to cart</a></li>
+		
+			<br>
+			<p>Product :{{m[7]}}  price per kg :{{n[7]}}        <label>Quantity</label><input type="text" name="Quantity7"></p>
+			<li class="nav-item"><a href="#" class="button">Add to cart</a></li>
+		
+			<br>
+			<p>Product :{{m[8]}}  price per kg :{{n[8]}}        <label>Quantity</label><input type="text" name="Quantity8"></p>
+			<li class="nav-item"><a href="#" class="button">Add to cart</a></li>
+		<br>
 		<section class="ftco-section ftco-no-pt ftco-no-pb py-5 bg-light">
       <div class="container py-4">
         <div class="row d-flex justify-content-center py-5">
